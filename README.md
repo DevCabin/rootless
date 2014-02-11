@@ -1,3 +1,9 @@
+rootless
+========
+
+Wordpress starter theme build with Roots.io, LESS, ACF, ekko-lightbox and oh so much more. 
+
+
 # [Roots Theme](http://roots.io/)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
@@ -71,3 +77,10 @@ Everyone is welcome to help [contribute](CONTRIBUTING.md) and improve this proje
 ## Support
 
 Use the [Roots Discourse](http://discourse.roots.io/) to ask questions and get support.
+=======
+rootless
+========
+
+Wordpress starter theme build with Roots.io, LESS, ACF, ekko-lightbox and oh so much more. 
+>>>>>>> b687f20bfb1a75f1bbef41588a463acb32f87c5b
+
