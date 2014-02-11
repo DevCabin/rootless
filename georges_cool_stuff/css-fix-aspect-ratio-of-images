@@ -1,0 +1,35 @@
+http://www.sitepoint.com/maintain-image-aspect-ratios-responsive-web-design/
+
+// do it as a mixin or variable
+
+
+#element
+{
+    position: relative;
+    height: 0;
+    padding: 56.25% 0 0 0;
+}
+
+
+li a
+{
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding: 56.25% 0 0 0;
+  overflow: hidden;
+}
+ 
+img
+{
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
