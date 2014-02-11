@@ -79,10 +79,7 @@ Custom post type for sliders!
 
 -- Add full width option for big screens to sass
 
-==============
 1.2.14
-==============
-Ok so...
 
 ==============
 SLIDERS
