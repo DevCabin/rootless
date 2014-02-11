@@ -19,5 +19,3 @@
     </nav>
   </div>
 </header>
-
-<?php include('slider-logic.php'); ?>
