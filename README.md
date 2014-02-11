@@ -202,7 +202,7 @@ http://gianlucaguarini.github.io/Tocca.js/demo-fun.html
 FULL PAGE BOOK STYLE PAGE TURN (includes left app nav)
 http://tympanus.net/Tutorials/FullscreenBookBlock/
 
-MAKE MANU GO AWAY AND COME BACK WITH SCROLL (cool!)
+MAKE MENU GO AWAY AND COME BACK WITH SCROLL (cool!)
 http://wicky.nillia.ms/headroom.js/playroom/
 
 
