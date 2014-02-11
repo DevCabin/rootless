@@ -1,3 +1,7 @@
+TO DO:
+2.11.14 Get rid of Slider-Logic and add front-page (see emerge for details)
+
+
 List of templates changed:
 ADVANCE SEARCH in content-page.php
 GALLERY code is in INDEX.php plus demo code in 

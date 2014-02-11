@@ -1,40 +1,13 @@
-rootless
+# [Rootless](http://devcabin.com/rootless)
 ========
 
 Wordpress starter theme build with Roots.io, LESS, ACF, ekko-lightbox and oh so much more. 
 
-
-# [Roots Theme](http://roots.io/)
+[![Built with Roots Theme](http://devcabin.com/roots.png)](http://roots.io/)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-Roots is a WordPress starter theme based on [HTML5 Boilerplate](http://html5boilerplate.com/) & [Bootstrap](http://getbootstrap.com/) that will help you make better themes.
-
-* Source: [https://github.com/roots/roots](https://github.com/roots/roots)
-* Home Page: [http://roots.io/](http://roots.io/)
-* Twitter: [@retlehs](https://twitter.com/retlehs)
-* Newsletter: [Subscribe](http://roots.io/subscribe/)
-* Forum: [http://discourse.roots.io/](http://discourse.roots.io/)
-
-## Installation
-
-Clone the git repo - `git clone git://github.com/roots/roots.git` - or [download it](https://github.com/roots/roots/zipball/master) and then rename the directory to the name of your theme or website. [Install Grunt](http://gruntjs.com/getting-started), and then install the dependencies for Roots contained in `package.json` by running the following from the Roots theme directory:
-
-```
-npm install
-```
-
-Reference the [theme activation](http://roots.io/roots-101/#theme-activation) documentation to understand everything that happens once you activate Roots.
-
-## Theme Development
-
-After you've installed Grunt and ran `npm install` from the theme root, use `grunt watch` to watch for updates to your LESS and JS files and Grunt will automatically re-build as you write your code.
-
-## Configuration
-
-Edit `lib/config.php` to enable or disable support for various theme functions and to define constants that are used throughout the theme.
-
-Edit `lib/init.php` to setup custom navigation menus and post thumbnail sizes.
+Youll probably need to reference the Roots starter docs. There's a bit of a learning curve (at least there was for me) but it's worth it. I now understand what "Rapid Development" is as well as what the DRY principle means. It's pretty sweet amigo. Here are some links...
 
 ## Documentation
 
@@ -53,30 +26,187 @@ Edit `lib/init.php` to setup custom navigation menus and post thumbnail sizes.
 * [Grunt build script](http://roots.io/using-grunt-for-wordpress-theme-development/)
 * [Theme activation](http://roots.io/roots-101/#theme-activation)
 * [Theme wrapper](http://roots.io/an-introduction-to-the-roots-theme-wrapper/)
-* Root relative URLs
-* [Clean URLs with a plugin](https://github.com/roots/roots-rewrites) (no more `/wp-content/`)
-* All static theme assets are rewritten to the website root (`/assets/*`)
-* Cleaner HTML output of navigation menus
-* Cleaner output of `wp_head` and enqueued scripts/styles
-* Nice search (`/search/query/`)
-* Image captions use `<figure>` and `<figcaption>`
-* Example vCard widget
-* Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
-* [Multilingual ready](http://roots.io/wpml/) (Brazilian Portuguese, Bulgarian, Catalan, Danish, Dutch, English, Finnish, French, German, Hungarian, Indonesian, Italian, Korean, Macedonian, Norwegian, Polish, Russian, Simplified Chinese, Spanish, Swedish, Traditional Chinese, Turkish, Vietnamese, Serbian)
 
-## Contributing
+## Additional Features
 
-Everyone is welcome to help [contribute](CONTRIBUTING.md) and improve this project. There are several ways you can contribute:
+* [Ekko Lightbox For Bootstrap](https://github.com/ashleydw/lightbox)
+* [Half Slider for Bootstrap](http://startbootstrap.com/half-slider)
 
-* Reporting issues (please read [issue guidelines](https://github.com/necolas/issue-guidelines))
-* Suggesting new features
-* Writing or refactoring code
-* Fixing [issues](https://github.com/roots/roots/issues)
-* Replying to questions on the [forum](http://discourse.roots.io/)
+## Odds and Ends
 
-## Support
+List of templates changed:
+ADVANCE SEARCH in content-page.php
+GALLERY code is in INDEX.php plus demo code in 
+-slider-logic.php included in header-top-navbar.php
+ALSO INDEX.php has the code to exclude slider category from search 
+results.
+SLIDER added to slider-logic.php. Also it has the php to add the 
+"active" class to the current slider.
 
-Use the [Roots Discourse](http://discourse.roots.io/) to ask questions and get support.
+footer.php has placeholder text replacement code with jquery
+-also has carousel auto timer. 
+
+1.13.14
+
+Added nav float variable into navbar.less with variable set in variables.less.
+
+1.14.14
+Added .rounded-corners (@radius) from http://lesscss.org/ to mixins.less
+
+1.24.14
+http://tosrus.frebsite.nl/ - zip here, need to try
+http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/ 
+-LOVE this
+
+2.6
+
+print only stylesheet was overwriting styles because of !important declaration.
+not cool. Commented out first style. Need to investigate.
+
+2.11.14
+
+http://www.advancedcustomfields.com/resources/getting-started/including-acf-in-a-plugin-theme/
+Added to theme! It's legal, just get it right, see about including their 
+options under our options.
+
+
+===============================
+NOTE: Need to @import or whatever you do to get the latest of these rather than
+this static "put em in the folder" business - backstretch has a grunt file
+
+ADD THIS: http://www.armagost.com/blog/developing-a-content-slider-with-custom-post-types/
+Custom post type for sliders!
+
+-- Add full width option for big screens to sass
+
+==============
+1.2.14
+==============
+Ok so...
+
+==============
+SLIDERS
+==============
+
+Here's the one I used in production: http://startbootstrap.com/half-slider 
+(lot's of great stuff in there)
+Default BootStrap slider docs here: http://getbootstrap.com/javascript/#carousel
+
+bxslider is simple and lightweight - AND for html, vid OR images
+URL: http://bxslider.com/faqs
+License: The bxSlider is released under the WTFPL license - http://sam.zoy.org/wtfpl/ 
+
+Flux slider has killer transitions, BUT is ONLY FOR IMAGES
+URL: https://github.com/joelambert/Flux-Slider/
+License: https://github.com/joelambert/Flux-Slider/blob/master/MIT-LICENSE
+
+==============
+
+LIGHTBOXES
+==============
+
+As far as lightboxes go...
+ekko-lightbox.js is already included in my new roots. It uses stuff already in bootstrap, 
+with just a little bit added.
+URL: https://github.com/ashleydw/lightbox
+License: https://github.com/ashleydw/lightbox/blob/master/LICENSE.txt (GNU v2)
+
+but here's an alt if you need it...
+prettyPhoto v3.1.4
+URL: http://www.no-margin-for-errors.com/projects/prettyPhoto/
+License: “prettyPhoto is totally free to use, it is released the GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html) or Creative Commons 2.5 license (http://creativecommons.org/licenses/by/2.5/). Feel free to use the one that suits your needs. You can use it in all you projects even commercial ones as long as you leave the credits at the top intact. ”
+
+And finally, a super simple lightbox that is totally totally free to use.
+https://travis-ci.org/cocopon/vanillabox.png?branch=master
+http://cocopon.me/app/vanillabox/
+Free for commercial use.
+  It's licenced under the [MIT License](http://opensource.org/licenses/MIT).
+NOTE: Has notes for sass/less terminal usage :)
+
+==============
+IMAGE LOAGING
+==============
+http://www.appelsiini.net/projects/lazyload 
+-- ADDED to vendor js folder, but not yet enqueued
+
+Then we have this: http://luis-almeida.github.io/unveil/
+based on lazyload (above) but removes certain features and weighs
+in at less than 1k !!
+Not including at this time, just make note. 
+
+And a final alternative: 
+http://toddmotto.com/labs/echo/
+Seems really easy to implement, but may have issues. 
+
+PHP and js solution - 
+http://adaptive-images.com/
+- hang on to this, but I don't think it's ripe enough for mainstream production.
+
+==============
+EXTRA HOTNESS
+==============
+
+FULL SCREEN BACKGROUND IMAGE
+URL: http://srobbin.com/jquery-plugins/backstretch/
+js included in vendor
+
+
+GALLERY WITH LAZYLOAD
+http://kamilczujowski.github.io/least/
+
+
+LEFT SIDE RESPONSIVE APP MENU
+Not really a bootstrap thing, but this is bad ace: 
+http://mmenu.frebsite.nl/examples/responsive/index.html
+"The coolest responsive menu example you'll ever see, ever."
+(http://mmenu.frebsite.nl/)
+-- Another version, http://ascott1.github.io/bigSlide.js/
+-- One more, hardly any styling,http://www.berriart.com/sidr/#usage
+-- REALLY SIMPLE ONE: http://jpanelmenu.com/index.html
+
+--LEFT OR RIGHT SWIPE! http://jakiestfu.github.io/Snap.js/demo/apps/default.html
+OMG: http://jakiestfu.github.io/Snap.js/demo/apps/toggles.html
+
+LEFT SIDE STACKED PUSH NAVIGATION
+http://multi-level-push-menu.make.rs/
+
+FEEDBACK FORM TAB
+http://feedback-me.appspot.com/example_bootstrap.html
+https://github.com/vedmack/feedback_me
+MIT license
+
+SCROLL TO TOP
+http://markgoodyear.com/labs/scrollup/
+
+RIGHT CLICK DEEP OPTION MENU
+http://lab.jakiestfu.com/contextjs/
+
+FORM UI STEPS AND ERRORS
+http://192.241.132.92/idealforms3/
+
+TABS WITH COOL TRANSITIONS
+http://git.aaronlumsden.com/tabulous.js/#demo
+
+FORM GLAMORIZOR
+http://thrivingkings.com/read/Formly-The-form-glamorizer-for-jQuery
+Validation and tidy errors and styling
+
+DRAG AND DROP
+Not sure where I'd use this yet, but DANG!
+http://pep.briangonzalez.org/
+
+TOUCH UI
+http://ngryman.sh/jquery.finger/
+http://gianlucaguarini.github.io/Tocca.js/demo-fun.html
+
+FULL PAGE BOOK STYLE PAGE TURN (includes left app nav)
+http://tympanus.net/Tutorials/FullscreenBookBlock/
+
+MAKE MANU GO AWAY AND COME BACK WITH SCROLL (cool!)
+http://wicky.nillia.ms/headroom.js/playroom/
+
+
+
 =======
 rootless
 ========
