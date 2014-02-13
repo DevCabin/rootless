@@ -1,5 +1,7 @@
 TO DO:
 2.11.14 Get rid of Slider-Logic and add front-page (see emerge for details)
+2.13.14 Remove stupid PHP to add "active" to first item (for carousel), then check the Emerge footer for 
+the SINGLE LINE Jquery that does the same thing as your 23 lines of PHP
 
 
 List of templates changed:
