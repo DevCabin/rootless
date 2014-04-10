@@ -17,7 +17,6 @@ function roots_setup() {
    add_image_size('category-thumb', 300, 9999); // 300px wide (and unlimited height)
    add_image_size('category-full', 650, 9999); // 650px wide (and unlimited height)
    add_image_size('slider-img', 850, 9999); // 850px wide (and unlimited height)
-
   // Add post formats (http://codex.wordpress.org/Post_Formats)
   // add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
@@ -25,6 +24,5 @@ function roots_setup() {
   add_editor_style('/assets/css/editor-style.css');
 }
 add_action('after_setup_theme', 'roots_setup');
-
 // Backwards compatibility for older than PHP 5.3.0
 if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
