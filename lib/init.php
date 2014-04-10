@@ -30,4 +30,4 @@ add_action('after_setup_theme', 'roots_setup');
 if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
 
 
-require_once('advanced-custom-fields/acf.php' ); // add advance custom fields plugin
+// require_once('advanced-custom-fields/acf.php' ); // add advance custom fields plugin
