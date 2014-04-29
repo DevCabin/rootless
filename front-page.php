@@ -13,7 +13,7 @@
 				<!-- pasted -->
 							
 								<div class="s_image">
-									<img src="/wp-content/uploads/2014/02/home-slide-1.jpg"/>
+									<img src="http://placehold.it/1140x400"/>
 								</div>
 								
 								<div class="container">
@@ -36,7 +36,7 @@
 				<!-- pasted -->
 							
 								<div class="s_image">
-									<img src="/wp-content/uploads/2014/02/home-slide-1.jpg"/>
+									<img src="http://placehold.it/1140x400"/>
 								</div>
 								
 								<div class="container">
