@@ -36,6 +36,10 @@ $(function(){
       interval: 2000
     });
 });
+
+$( "#myCarousel .item:first" ).addClass( "active" );
+$( "#myOtherCarousel .item:first" ).addClass( "active" );
+
 </script>
 
 <?php wp_footer(); ?>
