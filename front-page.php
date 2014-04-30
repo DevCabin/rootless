@@ -1,6 +1,6 @@
-<div class="row no_margin">
+<div class="row">
 	<div class="container">
-		<div class="carousel col-md-pull-2"> 
+		<div class="carousel"> 
 
 		    <!-- Carousel
 		    ================================================== -->
@@ -54,32 +54,7 @@
 
 						  
 				  
-			<?php  /* Production code. 
-			$c = 0;
 
-			query_posts('cat=3');
-			while (have_posts()) : the_post(); 
-
-			$class_a = '';
-			$c++;
-
-			if ( $c == 1 ) $class_a .= ' active';
-
-			$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'slider-img');
-			?>
-			
-			<div class="item <?php echo $class_a; ?>">
-			  <img src="<?php echo $large_image_url[0] ?>" alt="" />
-			  <div class="container">
-			    <div class="carousel-caption">
-					<h1 class="cc"><?php the_title(); ?></h1>
-			    </div>
-			  </div>
-			</div>
-
-<?php endwhile; ?>
-
-<?php wp_reset_query(); */ ?>
 		      </div>
 		      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 		      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
